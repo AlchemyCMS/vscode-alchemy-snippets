@@ -1,0 +1,34 @@
+{
+	"Alchemy Page Layout Definition": {
+		"scope": "yaml",
+		"prefix": "pa",
+		"body": [
+			"- name: ${1}",
+			"  elements:",
+			"    - ${2}",
+      "  autogenerate:",
+      "    - ${3}"
+    ],
+		"description": "Alchemy page layout definition"
+	},
+	"Alchemy Element Definition": {
+		"scope": "yaml",
+		"prefix": "el",
+		"body": [
+			"- name: ${1}",
+			"  contents:",
+			"    - name: ${2}",
+			"      type: ${3}"
+    ],
+		"description": "Alchemy element definition"
+	},
+	"Alchemy Content Definition": {
+		"scope": "yaml",
+		"prefix": "co",
+		"body": [
+			"- name: ${1}",
+			"  type: ${2}"
+    ],
+		"description": "Alchemy content definition"
+	}
+}
